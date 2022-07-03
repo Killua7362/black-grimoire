@@ -10,7 +10,7 @@ const overrides = extendTheme({
     global: (props) => ({
       body: {
         color: mode("white.800", "whiteAlpha.900")(props),
-        bg: mode("#F2EEDE", "#260e04.800")(props),
+        bg: mode("white", "#260e04.800")(props),
       },
     }),
   },

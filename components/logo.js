@@ -1,10 +1,10 @@
 import { Image, Text, useColorModeValue } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { useState } from "react";
-import Link from "next/link";
+import NextLink from "next/link";
 
 const LogoLayout = styled.span`
-  font-size: 21px;
+  font-size: min(21px, 5.5vw);
   display: inline-flex;
   align-items: center;
   height: 30px;
@@ -15,17 +15,21 @@ const LogoLayout = styled.span`
 const Logo = () => {
   const [img, setImg] = useState("/images/nothovered.png");
   return (
-    <Link href="/" useHref>
+    <NextLink href="/" useHref>
       <LogoLayout
         onMouseEnter={() => setImg("/images/hovered.png")}
         onMouseLeave={() => setImg("/images/nothovered.png")}
       >
         <Image alt="logo" src={img} width={6} height={6} />
-        <Text fontWeight="bold" color={useColorModeValue("gray,white")}>
+        <Text
+          fontWeight="semibold"
+          color={useColorModeValue("gray,white")}
+          pl={1}
+        >
           Akshay Bhat
         </Text>
       </LogoLayout>
-    </Link>
+    </NextLink>
   );
 };
 

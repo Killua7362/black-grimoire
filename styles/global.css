@@ -1,0 +1,18 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+div {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+a {
+  color: blue;
+}
+h1 {
+  font-size: xx-small;
+}
+
+::selection {
+  background: #79bb40;
+}

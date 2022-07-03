@@ -8,7 +8,7 @@ const projects = ({}) => {
     <Layout>
       <Container pt={10}>
         <SimpleGrid columns={[1, 1, 2]} mb={4} spacing={10}>
-          <GridItem id="test1" title="test1" thumbnail={thumbnail}></GridItem>
+          <GridItem  id="test1" title="test1" thumbnail={thumbnail}></GridItem>
         </SimpleGrid>
       </Container>
     </Layout>

@@ -3,8 +3,8 @@ import Head from "next/head";
 import Navbar from "../navbar";
 import { useEffect, useState } from "react";
 import FloatingButton from "../floating_button";
+import Footer from "../footer";
 
-import PathBar from "../pathbar";
 const Main = ({ children, maxW }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
@@ -30,8 +30,12 @@ const Main = ({ children, maxW }) => {
         <Box as="main" pb={8}>
           <Navbar />
           <Container maxW="container.md" pt="20">
-            <PathBar />
-            <Container maxW="container.md" pt="5">{children}</Container>
+            <Container maxW="container.md" pt="5">
+              {children}
+            </Container>
+            <Container maxW="container.md" pt="5">
+              <Footer />
+            </Container>
           </Container>
         </Box>
       </Box>

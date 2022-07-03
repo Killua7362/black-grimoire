@@ -29,10 +29,7 @@ const LinkItem = ({ children, path, href }) => {
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
   return (
     <NextLink href={href}>
-      <Link
-        p={2}
-        borderBottom={active ? "1px" : "0"}
-      >
+      <Link p={2} borderBottom={active ? "1px" : "0"}>
         {children}
       </Link>
     </NextLink>
@@ -67,19 +64,21 @@ const Navbar = ({ props }) => {
           </Heading>
         </Flex>
 
-        <HStack
+        <Box
           display={{ base: "none", md: "flex" }}
           width={{ base: "full", md: "auto" }}
-          direction={{ base: "column", md: "row " }}
           alignItems="center"
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem path={path} href="/projects">
-            <Text p={2} pl={2}>
-              Projects
+          <LinkItem path={path} href="/about">
+            <Text p={2} pl={2} fontSize="18px">
+              About
             </Text>
           </LinkItem>
-        </HStack>
+          <LinkItem path={path} href="/projects">
+            <Text fontSize="18px">Projects</Text>
+          </LinkItem>
+        </Box>
 
         <Box flex={1} align="right" p={{ base: "2", md: "3" }}>
           <LightSwitch />
@@ -95,7 +94,12 @@ const Navbar = ({ props }) => {
                 transition="all 0.2s"
               ></MenuButton>
               <MenuList minW="0" p="0">
-                <MenuItem>Projects</MenuItem>
+                <MenuItem>
+                  <NextLink href="/about">About</NextLink>
+                </MenuItem>
+                <MenuItem>
+                  <NextLink href="/projects">Projects</NextLink>
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

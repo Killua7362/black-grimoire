@@ -18,15 +18,13 @@ import {
 import { useEffect, useState } from "react";
 
 const PathBar = ({ props }) => {
-  const [path, setPath] = useState("");
+  const [path, setPath] = useState([]);
+
   useEffect(() => {
     const currentURL = window.location.href; // returns the absolute URL of a page
     const pathname = window.location.pathname; //returns the current url minus the domain name
-    if (pathname == "/") {
-      setPath("home");
-    } else {
-      setPath(`home ${pathname.split("/").join(" > ")}`);
-    }
+    const array = pathname.split("/").filter(Boolean);
+    setPath(array);
   }, []);
   return (
     <Box
@@ -45,7 +43,11 @@ const PathBar = ({ props }) => {
         maxW="container.md"
       >
         <Flex>
-          <Text fontWeight="bold" fontSize="xm">{path}</Text>
+          {path.map((course, idx) => (
+            <Link href={"/"+course}>
+              <Text>{course} > </Text>
+            </Link>
+          ))}
         </Flex>
       </Container>
     </Box>
