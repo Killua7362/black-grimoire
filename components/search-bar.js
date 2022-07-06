@@ -4,17 +4,24 @@ import {
   useColorModeValue,
   Input,
   FormLabel,
+  Text,
 } from "@chakra-ui/react";
+import { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+  const changeHandler = (event) => {
+    props.Changedata(event.target.value);
+    event.preventDefault();
+  };
   return (
-    <Box pt={5} pb={1}>
+    <Box>
       <FormControl>
         <Input
           h="40px"
           borderColor={useColorModeValue("black", "white")}
-          placeholder="Type anything or press Alt+K"
+          placeholder="Type anything"
           _placeholder={{ color: useColorModeValue("black", "white") }}
+          onChange={changeHandler}
         />
       </FormControl>
     </Box>

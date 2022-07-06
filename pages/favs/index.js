@@ -1,11 +1,18 @@
-
 import GardenLayout from "../../components/layouts/home-garden";
 import Layout from "../../components/layouts/main-layout";
 
-export default function Tags() {
+import { getAllNotes, getNoteBySlug } from "../../lib/api";
+export default function Tags({ allNotes }) {
   return (
-    <Layout>
+    <Layout allNotes={allNotes}>
       <GardenLayout />
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const allNotes = await getAllNotes();
+  return {
+    props: { allNotes },
+  };
 }

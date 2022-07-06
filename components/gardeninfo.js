@@ -19,10 +19,10 @@ const GardenInfo = () => {
           Hello this project is created for two purpose
         </Text>
         <UnorderedList pl={5} pt={3}>
-          <ListItem color={useColorModeValue("blue.800", "blue.100")}>
+          <ListItem color={useColorModeValue("green.800", "green.100")}>
             To store my thoughts
           </ListItem>
-          <ListItem color={useColorModeValue("blue.800", "blue.100")} pt={2}>
+          <ListItem color={useColorModeValue("green.800", "green.100")} pt={2}>
             To acces my notes anywhere any time for Me
           </ListItem>
         </UnorderedList>

@@ -4,8 +4,9 @@ import Navbar from "../navbar";
 import { useEffect, useState } from "react";
 import FloatingButton from "../floating_button";
 import Footer from "../footer";
+import SideBar from "../sidebar";
 
-const Main = ({ children, maxW }) => {
+const Main = ({ children, maxW, allNotes=[] }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -28,8 +29,8 @@ const Main = ({ children, maxW }) => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <Box as="main" pb={8}>
-          <Navbar />
-          <Container maxW="container.md" pt="20">
+          <Navbar allNotes={allNotes}/>
+          <Container maxW="container.md" pt={{ base: "16", md: "20" }}>
             <Container maxW="container.md" pt="5">
               {children}
             </Container>

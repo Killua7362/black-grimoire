@@ -17,19 +17,16 @@ const CatBar = () => {
   const router = useRouter();
   const path = router.pathname;
   return (
-    <Box w="100%" display="flex" pt={5} justifyContent="center">
+    <Box
+      fontSize={{ base: "xs", md: "lg" }}
+      w="100%"
+      display="flex"
+      pt={5}
+      justifyContent="center"
+    >
       <HStack>
         <LinkItem href="/" path={path}>
-          Guide
-        </LinkItem>
-        <LinkItem href="/tags" path={path}>
-          Tags
-        </LinkItem>
-        <LinkItem href="/categories" path={path}>
-          Categories
-        </LinkItem>
-        <LinkItem href="/favs" path={path}>
-          Favs
+          About
         </LinkItem>
         <LinkItem href="/recent" path={path}>
           Recent

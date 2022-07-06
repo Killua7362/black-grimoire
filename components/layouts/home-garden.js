@@ -3,7 +3,6 @@ import Image from "next/image";
 import Layout from "./main-layout";
 import MainHeading from "../heading";
 import GardenInfo from "../gardeninfo";
-import SearchBar from "../search-bar";
 import CatBar from "../categories-bar";
 import {
   Box,
@@ -25,7 +24,6 @@ export default function GardenLayout() {
   return (
     <>
       <MainHeading />
-      <SearchBar />
       <CatBar />
     </>
   );
