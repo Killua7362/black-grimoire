@@ -60,10 +60,10 @@ export async function getStaticProps({ params }) {
       props: {
         note: {
           frontmatter: note.frontmatter || null,
-          slug: note.slug,
-          content: mdxSource,
+          slug: note.slug || null,
+          content: mdxSource || null,
           allNotes: allNotes,
-          stats: JSON.stringify(note.stats),
+          stats: JSON.stringify(note.stats) ,
         },
       },
     };
