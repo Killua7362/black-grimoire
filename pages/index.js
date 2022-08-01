@@ -20,6 +20,6 @@ export default function Home({ allNotes }) {
 export async function getStaticProps() {
   const allNotes = await getAllNotes();
   return {
-    props: { allNotes },
+    props: { allNotes } || null,
   };
 }
