@@ -28,7 +28,7 @@ export default function Tags({ allNotes }) {
                   alignItems="center"
                 >
                   <Text pl={2} key={index} fontSize="xl" fontWeight="semibold">
-                    {new String(note.frontmatter.title) == "undefined"
+                    {note.frontmatter.title == null
                       ? note.slug.split("/").slice(-1).filter(Boolean).join("-")
                       : note.frontmatter.title}
                   </Text>
@@ -51,6 +51,6 @@ export default function Tags({ allNotes }) {
 export async function getStaticProps() {
   const allNotes = await getAllNotes();
   return {
-    props: { allNotes } || null,
+    props: { allNotes } ,
   };
 }

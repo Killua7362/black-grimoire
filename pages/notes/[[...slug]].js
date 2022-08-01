@@ -15,7 +15,7 @@ export default function NotePage({
       <Container maxW="container.md" pt="10">
         <Container maxW="container.md" pt="6">
           <Text p={3} fontSize="2xl">
-            {new String(frontmatter.title) == "undefined"
+            {frontmatter.title == null 
               ? slug.split("/").slice(-1).filter(Boolean).join("-")
               : frontmatter.title}
           </Text>
@@ -59,10 +59,10 @@ export async function getStaticProps({ params }) {
     return {
       props: {
         note: {
-          frontmatter: note.frontmatter || null,
-          slug: note.slug || null,
-          content: mdxSource || null,
-          allNotes: allNotes || null,
+          frontmatter: note.frontmatter,
+          slug: note.slug,
+          content: mdxSource ,
+          allNotes: allNotes,
           stats: JSON.stringify(note.stats) || null,
         },
       },

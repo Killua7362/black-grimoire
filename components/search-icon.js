@@ -53,7 +53,7 @@ const SearchIcon = ({ allNotes }) => {
     })
     .filter((note, index) => {
       if (searchValue != "") {
-        if (typeof note.frontmatter.title != "undefined") {
+        if (note.frontmatter.title != null) {
           return (
             note.content.toLowerCase().includes(searchValue.toLowerCase()) ||
             note.frontmatter.title
@@ -61,9 +61,7 @@ const SearchIcon = ({ allNotes }) => {
               .includes(searchValue.toLowerCase())
           );
         } else {
-          return (
-            note.content.toLowerCase().includes(searchValue.toLowerCase())
-          );
+          return note.content.toLowerCase().includes(searchValue.toLowerCase());
         }
       }
     });
@@ -107,7 +105,7 @@ const SearchIcon = ({ allNotes }) => {
                     <NextLink href={`${note.slug}`}>
                       <Link>
                         <Text pb={1} pt={1} key={index} onClick={close}>
-                          {new String(note.frontmatter.title) == "undefined"
+                          {note.frontmatter.title == null
                             ? note.slug
                                 .split("/")
                                 .slice(-1)
