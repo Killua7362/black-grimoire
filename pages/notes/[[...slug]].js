@@ -20,7 +20,7 @@ export default function NotePage({
               : frontmatter.title}
           </Text>
           <MDXRemote {...content} lazy />
-          {new Date(JSON.parse(stats).ctime).toLocaleDateString("en-us")}
+          { new String(stats) == "null"?" ":new Date(JSON.parse(stats).ctime).toLocaleDateString("en-us")}
         </Container>
       </Container>
     </>
@@ -63,7 +63,7 @@ export async function getStaticProps({ params }) {
           slug: note.slug || null,
           content: mdxSource || null,
           allNotes: allNotes,
-          stats: JSON.stringify(note.stats) ,
+          stats: JSON.stringify(note.stats) || null ,
         },
       },
     };
