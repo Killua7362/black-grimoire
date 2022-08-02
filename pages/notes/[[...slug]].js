@@ -63,7 +63,7 @@ export async function getStaticProps({ params }) {
           slug: note.slug || " ",
           content: mdxSource || " ",
           allNotes: allNotes,
-          stats: JSON.stringify(note.stats) || " ",
+          stats: JSON.stringify(note.stats) || "{}",
         },
       },
     };
