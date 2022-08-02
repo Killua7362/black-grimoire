@@ -59,11 +59,11 @@ export async function getStaticProps({ params }) {
     return {
       props: {
         note: {
-          frontmatter: note.frontmatter || null,
-          slug: note.slug || null,
-          content: mdxSource || null,
+          frontmatter: note.frontmatter || " ",
+          slug: note.slug || " ",
+          content: mdxSource || " ",
           allNotes: allNotes,
-          stats: JSON.stringify(note.stats) || null ,
+          stats: JSON.stringify(note.stats) || " ",
         },
       },
     };
