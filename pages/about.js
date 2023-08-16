@@ -24,7 +24,7 @@ import MyStory from "../components/mystory";
 export default function Home() {
 	return (
 		<Layout>
-			<Container pt={7}>
+			<Container>
 				<Container display={{ md: "flex" }} align="center" alignItems="center">
 					<Flex
 						display='flex'

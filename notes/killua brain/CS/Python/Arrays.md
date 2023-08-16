@@ -1,6 +1,0 @@
-- hashmap.get(index,default value)
-	- this is used to deal with keyerror which is used when index is not in hashmap
-- ascii value of variable a is ord(a)
-- In python list cannot be keys 
-- we can use defaultdict if there we need to initiate empty list which can take value which is not in it too
-	- defaultdict(list,lambda:0) list with initial value 0
