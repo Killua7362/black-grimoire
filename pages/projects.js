@@ -18,7 +18,7 @@ const projects = ({ }) => {
 				<SimpleGrid columns={1} mb={4} spacing={4}>
 					{data.map((ele, i) => (
 						<GridItem
-							id={data[i].title}
+							id={`grid-item-${i}`}
 							title={data[i].title}
 							techStack={data[i].techStack}
 							description={data[i].description}

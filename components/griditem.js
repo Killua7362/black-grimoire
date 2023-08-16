@@ -10,6 +10,7 @@ import {
 	LinkBox,
 	Container,
 	Link,
+	useColorModeValue,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 
@@ -22,8 +23,8 @@ const GridItem = ({
 	codeLink,
 	projectLink,
 }) => {
-	return <Flex justifyContent="center" >
-		<Box w="80vmin" minHeight="50px" shadow="md" borderWidth={1} >
+	return <Flex justifyContent="center" bg={useColorModeValue("#f5f5f5", "#2F2F2F")} >
+		<Box w="80vmin" minHeight="50px" shadow="md" borderColor={useColorModeValue("white", "black")} >
 			<Flex p={4} pb={1} justifyContent="space-between" wrap="nowrap" alignItems="center">
 				<Text fontSize={24}> {title}</Text>
 				<Text fontSize={13} pt={1} as='i'>{techStack}</Text>
