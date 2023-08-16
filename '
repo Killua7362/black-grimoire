@@ -26,17 +26,14 @@ export default function Home() {
 		<Layout>
 			<Container pt={7}>
 				<Container display={{ md: "flex" }} align="center" alignItems="center">
-					<Flex
-						display='flex'
-						flexDirection='column'
+					<Box
 						flexGrow={1}
 						flexShrink={0}
 						textAlign={{ base: "center", md: "left" }}
 					>
 						<Heading size="xl">Akshay Bhat</Heading>
-						<Links />
-
-					</Flex>
+						<Text>testing</Text>
+					</Box>
 					<Box flexShrink={0} pt={{ base: "8", md: "2" }}>
 						<Pfp />
 					</Box>
@@ -44,6 +41,7 @@ export default function Home() {
 				<MyStory />
 				<Education />
 				<Skills />
+				<Links />
 			</Container>
 		</Layout>
 	);

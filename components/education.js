@@ -24,25 +24,17 @@ const Education = () => {
       <VStack align="stretch" pt={3}>
         <Grid templateColumns="repeat(3, 1fr)">
           <GridItem>
-            <Text fontWeight="bold">2019 to present</Text>
+            <Text fontWeight="bold">2019 - 2023</Text>
           </GridItem>
           <GridItem colSpan={2}>
             <Box>
               <Text fontWeight="bold">
                 National Institute of Technology Karnataka
               </Text>
-              <Text fontSize="12px" as="i">
+              <Text fontSize="14px" as="i">
                 Bachelor of Technology in Mechanical Engineering
               </Text>
             </Box>
-          </GridItem>
-        </Grid>
-        <Grid templateColumns="repeat(3, 1fr)">
-          <GridItem>
-            <Text fontWeight="bold">2019</Text>{" "}
-          </GridItem>
-          <GridItem colSpan={2}>
-            <Text fontWeight="bold">School</Text>
           </GridItem>
         </Grid>
       </VStack>

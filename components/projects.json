@@ -1,0 +1,48 @@
+[
+    {
+        "title":"The Black Grimore",
+        "techStack":"NextJS,ChakraUI,MDX,next-mdx-remote",
+        "description":"It's a full stack application which is used to parse the markdown files in a folder and render them on my personal digital garden.",
+        "projectLink":"https://killua.is-a.dev",
+        "codeLink":"https://github.com/Killua7362/black-grimoire"
+    },
+    {
+        "title":"OtakuFlix",
+        "techStack":"Express,NextJS,ChakraUI,MoongoDB,Redux-toolkit,Firebase",
+        "description":"It's a full stack application created to learn how backend works with frontend and with state management ",
+        "codeLink":"https://github.com/Killua7362/otakuflix"
+    },
+    {
+        "title":"MicroNet",
+        "techStack":"Python,OpenCV,Numpy",
+        "description":"Neural network from scratch ",
+        "codeLink":"https://github.com/Killua7362/MicroNet"
+    },
+	    {
+        "title":"PicoGPT",
+        "techStack":"Python,PyTorch",
+        "description":"Transformer from scratch ",
+        "codeLink":"https://github.com/Killua7362/picogpt"
+    },
+	    {
+        "title":"Deduper",
+        "techStack":"Python,XGBoost,RecordLinkage",
+        "description":"Created to find duplicate records in database",
+        "codeLink":"https://github.com/Killua7362/deduper"
+    },
+
+	    {
+        "title":"Best Stock Predictor",
+        "techStack":"Python,Sklearn,PMDArima",
+        "description":"Created to use Arima model on top 10 scraped stocks ",
+        "codeLink":"https://github.com/Killua7362/stock-prediction"
+    },
+	
+	    {
+        "title":"NsunS",
+        "techStack":"Flutter,Firebase",
+        "description":"Simple flutter app which scrapes number of workout sets,reps,exercise from excel sheet create todolist view",
+        "codeLink":"https://github.com/Killua7362/NsunS"
+    }
+
+]

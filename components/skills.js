@@ -24,11 +24,43 @@ const Skills = () => {
       <VStack align="stretch" pt={3}>
         <Grid templateColumns="repeat(3, 1fr)">
           <GridItem>
-            <Text fontWeight="bold">Programming</Text>
+            <Text fontWeight="bold">Libraries</Text>
           </GridItem>
           <GridItem colSpan={2}>
             <Box>
-              <Text fontWeight="bold">Python,JavaScript,</Text>
+              <Text fontWeight="bold">Tensorflow, Pytorch, scikit-learn</Text>
+            </Box>
+          </GridItem>
+        </Grid>
+
+        <Grid templateColumns="repeat(3, 1fr)">
+          <GridItem>
+            <Text fontWeight="bold">Technologies</Text>
+          </GridItem>
+          <GridItem colSpan={2}>
+            <Box>
+              <Text fontWeight="bold">Git, Docker, Linux/Unix, Vim</Text>
+            </Box>
+          </GridItem>
+        </Grid>
+
+        <Grid templateColumns="repeat(3, 1fr)">
+          <GridItem>
+            <Text fontWeight="bold">Languages</Text>
+          </GridItem>
+          <GridItem colSpan={2}>
+            <Box>
+              <Text fontWeight="bold">Python, Javascript, SQL, HTML/CSS</Text>
+            </Box>
+          </GridItem>
+        </Grid>
+        <Grid templateColumns="repeat(3, 1fr)">
+          <GridItem>
+            <Text fontWeight="bold">Web Development</Text>
+          </GridItem>
+          <GridItem colSpan={2}>
+            <Box>
+              <Text fontWeight="bold">ReactJS, NextJS, NodJS, MongoDB</Text>
             </Box>
           </GridItem>
         </Grid>

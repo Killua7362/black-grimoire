@@ -4,7 +4,7 @@ const Pfp = () => {
   return (
     <Container>
       <Image
-        src="/images/killua.jpg"
+        src="/images/killua.jpeg"
         width="100px"
         borderRadius="full"
         alt="pfp"

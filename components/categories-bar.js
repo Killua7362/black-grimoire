@@ -29,7 +29,7 @@ const CatBar = () => {
           About
         </LinkItem>
         <LinkItem href="/recent" path={path}>
-          Recent
+          Notes
         </LinkItem>
       </HStack>
     </Box>
