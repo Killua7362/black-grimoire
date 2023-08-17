@@ -12,7 +12,7 @@ export default function Tags({ allNotes }) {
 		<Layout allNotes={allNotes} >
 			<GardenLayout />
 			<Box pt={3}>
-				{allNotes.slice(0, 5).map((note, index) => (
+				{allNotes.map((note, index) => (
 					<NextLink href={`${note.slug}`}>
 						<Container p={2}>
 							<Box

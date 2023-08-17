@@ -8,18 +8,18 @@ import NextLink from "next/link";
 
 import { getAllNotes, getNoteBySlug } from "../lib/api";
 export default function Home({ allNotes }) {
-  return (
-    <Layout allNotes={allNotes}>
-      <GardenLayout />
-      <GardenInfo />
-      <Box pt={5}></Box>
-    </Layout>
-  );
+	return (
+		<Layout >
+			<GardenLayout />
+			<GardenInfo />
+			<Box pt={5}></Box>
+		</Layout>
+	);
 }
 
 export async function getStaticProps() {
-  const allNotes = await getAllNotes();
-  return {
-    props: { allNotes } ,
-  };
+	const allNotes = getAllNotes();
+	return {
+		props: { allNotes },
+	};
 }

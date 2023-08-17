@@ -80,12 +80,12 @@ const Navbar = ({ props, allNotes }) => {
 						<LinkItem path={path} href="/projects">
 							<Text fontSize="18px">Projects</Text>
 						</LinkItem>
+						<LinkItem path={path} href="/note-book">
+							<Text fontSize="18px">Notes</Text>
+						</LinkItem>
 					</Box>
 
 					<Box flex={1} align="right" p={{ base: "2", md: "3" }}>
-						<Box display="inline-block" pr={3}>
-							<SearchIcon allNotes={allNotes} />
-						</Box>
 						<LightSwitch />
 						<Box ml={2} display={{ base: "inline-block", md: "none" }} pl={2}>
 							<Menu>
@@ -121,3 +121,4 @@ const Navbar = ({ props, allNotes }) => {
 };
 
 export default Navbar;
+

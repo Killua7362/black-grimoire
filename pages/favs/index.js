@@ -3,16 +3,16 @@ import Layout from "../../components/layouts/main-layout";
 
 import { getAllNotes, getNoteBySlug } from "../../lib/api";
 export default function Tags({ allNotes }) {
-  return (
-    <Layout allNotes={allNotes}>
-      <GardenLayout />
-    </Layout>
-  );
+	return (
+		<Layout >
+			<GardenLayout />
+		</Layout>
+	);
 }
 
 export async function getStaticProps() {
-  const allNotes = await getAllNotes();
-  return {
-    props: { allNotes } ,
-  };
+	const allNotes = await getAllNotes();
+	return {
+		props: { allNotes },
+	};
 }
