@@ -4,6 +4,7 @@ import data from "../components/projects.json";
 import {
 	SimpleGrid,
 	Divider,
+	Flex,
 	Container,
 	Heading,
 	VStack,
@@ -14,8 +15,8 @@ import {
 const projects = ({ }) => {
 	return (
 		<Layout>
-			<Container position="absolute" left={0} right={0} top={24}>
-				<SimpleGrid columns={1} mb={4} spacing={4}>
+			<Flex position="absolute" left={50} right={0} top={24} w='100%' >
+				<SimpleGrid columns={1} mb={4} spacing={4} >
 					{data.map((ele, i) => (
 						<GridItem
 							id={`grid-item-${i}`}
@@ -27,7 +28,7 @@ const projects = ({ }) => {
 						/>
 					))}
 				</SimpleGrid>
-			</Container>
+			</Flex>
 		</Layout>
 	);
 };

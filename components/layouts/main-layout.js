@@ -30,7 +30,7 @@ const Main = ({ children, maxW, allNotes = [] }) => {
 				</Head>
 				<Box as="main" pb={8}>
 					<Navbar allNotes={allNotes} />
-					<Container maxW="container.md" pt={{ base: "16", md: "20" }}>
+					<Container maxW="container.md" pt={{ base: "16", md: "20" }} position="relative" >
 						<Container maxW="container.md" pt="5">
 							{children}
 						</Container>
