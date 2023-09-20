@@ -7,6 +7,30 @@
         "codeLink":"https://github.com/Killua7362/black-grimoire"
     },
     {
+        "title":"AnimeFusion",
+        "techStack":"python,torch,transformers,diffusers",
+        "description":"Created a robust diffusion model employing Unet, Clip, and VAE models for image generation and Trained Unet and Clip models on a dataset of 58k 'Anime Names and Images' with captions, yielding anime-focused outcomes with user-guided conditioning.",
+        "codeLink":"https://github.com/Killua7362/animefusion"
+    },
+    {
+        "title":"pytorch-vqgan",
+        "techStack":"python,torch,numpy",
+        "description":"Designed a VQGAN architecture from scratch using torch and numpy for unconditional image generation, integrating GPT for latent vector prediction and employing a discriminator for binary classification and Utilized the 'Oxford 102 Flower' dataset with 108 classes for unconditional image generation",
+        "codeLink":"https://github.com/Killua7362/vqgan"
+    },
+    {
+        "title":"jaxformers",
+        "techStack":"python,jax",
+        "description":"Pioneered a character-level multi-head attention transformer architecture from scratch using JAX, while harnessing the 'tinyshakespeare' dataset, which contains 40,000 lines of Shakespearean text, to generate new plays and Innovatively created Module classes to manage parameters, convert classes into pure Python functions, and optimize them for JAX's efficient vectorization, ensuring a seamless integration of the two components for transformative results.",
+        "codeLink":"https://github.com/Killua7362/jaxformers"
+    },
+    {
+        "title":"tinyfusion",
+        "techStack":"python,torch,numpy",
+        "description":"Engineered a latent diffusion model from scratch, integrating UNET for image generation and Utilized the 'Landscape Pictures' dataset with 5000 samples for conditional image generation and improved gradient calculation using an Exponential Moving Average model.",
+        "codeLink":"https://github.com/Killua7362/diffusion"
+    },
+    {
         "title":"OtakuFlix",
         "techStack":"Express,NextJS,ChakraUI,MoongoDB,Redux-toolkit,Firebase",
         "description":"It's a full stack application created to learn how backend works with frontend and with state management ",
