@@ -28,7 +28,7 @@ const Skills = () => {
           </GridItem>
           <GridItem colSpan={2}>
             <Box>
-              <Text fontWeight="bold">Tensorflow, Pytorch, scikit-learn</Text>
+              <Text fontWeight="bold">Tensorflow, Pytorch, Jax, scikit-learn, pandas, NumPy, matplotlib</Text>
             </Box>
           </GridItem>
         </Grid>

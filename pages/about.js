@@ -20,6 +20,7 @@ import Education from "../components/education";
 import Skills from "../components/skills";
 import Links from "../components/links";
 import MyStory from "../components/mystory";
+import Exp from "../components/experience";
 
 export default function Home() {
 	return (
@@ -42,6 +43,7 @@ export default function Home() {
 					</Box>
 				</Container>
 				<MyStory />
+				<Exp />
 				<Education />
 				<Skills />
 			</Container>
